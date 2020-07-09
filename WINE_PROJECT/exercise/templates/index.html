@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Good or Meh Wine</title>
+<link href='http://fonts.googleapis.com/css?family=Ruge+Boogie' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Spectral+SC' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+  <style>
+  /*body{
+    font-family: sans-serif;*/
+  #grad1 {
+  	height: 1500px;
+  	background-image: linear-gradient(#ffe6e6, #ffb3b3, #ff6666);
+  }
+  * {
+  box-sizing: border-box;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  flex: 40%;
+  /*width: 30%;*/
+  border: 5px solid #ccc;
+  padding: 5px;
+  box-shadow: 10px 10px 0px #eee;
+  height: 350px; 
+}
+/* Clear floats after the columns */
+.row/*:after */{
+  /*content: "";*/
+  display: flex;
+  /*clear: both;*/
+}
+  .button {
+    padding: 20px;
+    background-color: PaleVioletRed;
+    border-style: solid;
+    border-color: RebeccaPurple;
+    border-radius: 20px;
+    color: Black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .animal-card {
+    border: 5px solid #ccc;
+    padding: 5px;
+    box-shadow: 10px 10px 0px #eee;
+    width: 50%;
+    margin: auto;
+  }
+  .my_text_style {
+  	font-family: "Spectral SC", Gadget, sans-serif;
+  	font-size: 36px;
+  	font-style: normal;
+  	font-variant: normal;
+  	font-weight: 400; 
+  	line-height: 36px;
+ 
+  }
+  h2 {
+  font: 100 80px/0.8 'Oleo Script', Helvetica, sans-serif;
+  color: #4f86f7;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+}
+	span {
+  font-family: 'Monoton';font-size: 30px; font-weight: 350; letter-spacing: .07em ;
+  
+}
+  </style>
+
+</head>
+
+<body align="center", id='grad1'>
+
+	<h2>
+		<img align="left" src="/static/glasses.png" width='10%' height='10%' alt="Wine Companion"> </img>
+		<div class="badge badge-primary text-wrap" style="width: 72rem;">
+  			<STRONG><span class="my_text_style"; style="font-size: 55px"> Meh Wines</span> FRUIT &nbsp WINE <br> SELECTION &nbsp CEREMONY:</STRONG>
+  	</h2>
+  			<!-- <h1 align="right" class="my_text_style">Brought to you by the <span>Good Wine Guy</span>.
+  			</h1>
+  			<br><br> Brought to you by <strong>"The Good Wine Guy"</strong>.
+		<img align="right" src="/static/Paris_wine.jpg" width='56%' height='40%' alt="Wine Companion"> </img> -->
+  			
+		</div>
+
+	
+
+	<div class="row">
+  		<div class="column" style="background-image: linear-gradient(#ffe6e6, #ffb3b3, #ff6666);">
+    		<h2 align="left" class="my_text_style"><strong>Find The Wine That Needs You!</strong></h2>
+    		<p align="left" class="my_text_style" style="font-size:28px">Enter in your desired chemical attributes of a wine and the Meh Wines <span>Good Wine Guy</span>will tell you if it's worth your time.</p>
+  		</div>
+
+  		<div class="column" style="background-image: linear-gradient(#ffe6e6, #ffb3b3, #ff6666);">
+    		<h2 align="right" class="my_text_style"><strong>Attributes</strong></h2>
+    		<p align="right">
+    			<form align="right" action="/good_or_meh_wine/" method="post">
+    			<!-- <div class="animal-card" align="right">
+ -->
+				      Fixed Acidity (2.0 - 20.0):
+				    
+				        <input type="text" name="fixed_acidity">
+				      <br>
+				      <br>
+
+				      Volatile Acidity (0.000 - 2.000):
+
+				        <input type="text" name="volatile_acidity">
+				      <br>
+				      <br>
+
+				      Residual Sugar (0.0 - 75.00):
+				      
+				        <input type="text" name="residual_sugar">
+				      <br>
+				      <br>
+				      
+				      Chlorides (0.000 - 0.750):
+				      
+				      	<input type="text" name="chlorides">
+				      <br>
+				      <br>
+
+				      Sulphates (0.00 - 2.50):
+				      
+				        <input type="text" name="sulphates">
+				      <br>
+				      <br>
+
+				      Alcohol by volume (4.0 - 20.0):
+				      
+				        <input type="text" name="alcohol">
+				      <br>
+				      <br>
+
+				      Ratio of Total to Free Sulfur Dioxide (1.0 - 50.0):
+				      
+				        <input type="text" name="sul_diox_ratio">
+				      <br>
+				      <br>
+
+				<!-- </div> -->
+    		</p>
+    	</div>
+	</div>
+
+  	<!-- <h2 align="left" class="my_text_style"></h2>
+
+ 	<form action="/good_or_meh_wine/" method="post">
+
+    <div class="animal-card" align="right">
+
+      Fixed Acidity (2.0 - 20.0):
+    
+        <input type="text" name="fixed_acidity">
+      <br>
+      <br>
+
+      Volatile Acidity (0.000 - 2.000):
+
+        <input type="text" name="volatile_acidity">
+      <br>
+      <br>
+
+      Residual Sugar (0.0 - 75.00):
+      
+        <input type="text" name="residual_sugar">
+      <br>
+      <br>
+      
+      Chlorides (0.000 - 0.750):
+      
+      	<input type="text" name="chlorides">
+      <br>
+      <br>
+
+      Sulphates (0.00 - 2.50):
+      
+        <input type="text" name="sulphates">
+      <br>
+      <br>
+
+      Alcohol by volume (4.0 - 20.0):
+      
+        <input type="text" name="alcohol">
+      <br>
+      <br>
+
+      Ratio of Total to Free Sulfur Dioxide (1.0 - 50.0):
+      
+        <input type="text" name="sul_diox_ratio">
+      <br>
+      <br>
+
+    </div> -->
+
+  <br><br>
+
+  <button type="submit" class="button">
+    <strong>What kind of grapes we working with?</strong>
+  </button>
+  </form>
+
+  <br>
+
+  {% if message %}
+  <h2>{{message}}</h2>
+  {% endif %}
+
+  <div class="badge badge-primary text-wrap" style="width: 72rem;">
+  			
+  			<h1 align="center" class="my_text_style">Brought to you by the <span>Good Wine Guy</span>.
+  			</h1>
+  			
+		<img align="center" src="/static/Paris_wine.jpg" width='56%' height='40%' alt="Wine Companion"> </img>
+  			
+	</div>
+
+</body>
+</html>

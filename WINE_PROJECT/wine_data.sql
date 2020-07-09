@@ -1,0 +1,1 @@
+SELECT mean(residual_sugar),type, quality from WINE_QUALITY_DATA WQD where type='white' and QUALITY=7

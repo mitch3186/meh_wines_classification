@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Good or Meh Wine</title>
+  <style>
+  /*body{
+    font-family: sans-serif;*/
+  #grad1 {
+  	height: 800px;
+  	background-image: linear-gradient(#ffe6e6, #ffb3b3, #ff6666);
+  }
+/* Create two equal columns that floats next to each other */
+.column {
+  float: center;
+  width: 50%;
+  padding: 10px;
+  /*height: 300px;  Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  .button {
+    padding: 20px;
+    background-color: PaleVioletRed;
+    border-style: solid;
+    border-color: RebeccaPurple;
+    border-radius: 20px;
+    color: Black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .animal-card {
+    border: 5px solid #ccc;
+    padding: 15px;
+    box-shadow: 10px 10px 0px #eee;
+    width: 600px;
+    margin: auto;
+  }
+  .my_text_style {
+  	font-family: "Arial Black", Gadget, sans-serif;
+  	font-size: 25 px;
+  	font-weight: bold;
+  }
+  </style>
+
+</head>
+
+<body align="center", id='grad1'>
+	<h1>
+		<div class="badge badge-primary text-wrap" style="width: 36	rem;">
+  <STRONG>FRUIT WINE SELECTION CEREMONY:</STRONG>
+  <br><br> Brought to you by <strong>"The Good Wine Guy"</strong>.
+		</div>
+	</h1>
+
+	<img src="/static/Paris_wine.jpg" width='50%' height='25%' alt="Wine Companion"> </img>
+	<div class="row">
+  		<div class="column" style="background-color:#aaa;">
+    		<h2>Find The Wine That Needs You!</h2>
+    		<p>Enter in the desired chemical attributes of a wine and the Meh Wines sommelier will tell you if it's worth your time.</p>
+  		</div>
+  	<div class="column" style="background-color:#bbb;">
+    		<h2>Attributes</h2>
+    		<p>Some text..</p>
+  </div>
+</div>
+  	<h2 align="left" class="my_text_style"></h2>
+
+ 	<form action="/good_or_meh_wine/" method="post">
+
+    <div class="animal-card" align="right">
+
+      Fixed Acidity (2.0 - 20.0):
+    
+        <input type="text" name="fixed_acidity">
+      <br>
+      <br>
+
+      Volatile Acidity (0.000 - 2.000):
+
+        <input type="text" name="volatile_acidity">
+      <br>
+      <br>
+
+      Residual Sugar (0.0 - 75.00):
+      
+        <input type="text" name="residual_sugar">
+      <br>
+      <br>
+      
+      Chlorides (0.000 - 0.750):
+      
+      	<input type="text" name="chlorides">
+      <br>
+      <br>
+
+      Sulphates (0.00 - 2.50):
+      
+        <input type="text" name="sulphates">
+      <br>
+      <br>
+
+      Alcohol by volume (4.0 - 20.0):
+      
+        <input type="text" name="alcohol">
+      <br>
+      <br>
+
+      Ratio of Total to Free Sulfur Dioxide (1.0 - 50.0):
+      
+        <input type="text" name="sul_diox_ratio">
+      <br>
+      <br>
+
+    </div>
+
+  <br>
+
+  <button type="submit" class="button">
+    <strong>What kind of grapes we working with?</strong>
+  </button>
+  </form>
+
+  <br>
+
+  {% if message %}
+  <h2>{{message}}</h2>
+  {% endif %}
+
+</body>
+</html>

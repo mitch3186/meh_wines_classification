@@ -1,0 +1,23 @@
+The data was downloaded from UCI Machine Learning Repository.
+The two datasets are related to red and white variants of the Portuguese "Vinho Verde" wine. For more details, the reference [Cortez et al., 2009]. Due to privacy and logistic issues, only physicochemical (inputs) and sensory (the output) variables are available (e.g. there is no data about grape types, wine brand, wine selling price, etc.).
+
+These datasets can be viewed as classification or regression tasks. The classes are ordered and not balanced (e.g. there are much more normal wines than excellent or poor ones). Outlier detection algorithms could be used to detect the few excellent or poor wines.
+
+FIXED ACID
+The predominant fixed acids found in wines are tartaric, malic, citric, and succinic. ... Wines produced from cool climate grapes are high in acidity and thus taste sour. These high-acid wines can be treated to reduce the acidity, either by neutralizing agents, or by malo-lactic fermentation.
+
+VOLATILE ACIDITY - main cause of spoilage
+Acetic acid bacteria require oxygen to grow, therefore, elimination of any air in wine containers and sulfur dioxide addition will limit their growth.  Likewise, rejection of moldy grapes will prevent possible problems.  Use of sulfur dioxide and inoculation with a low-V.A. producing strain of Saccharomyces may deter acetic acid producing yeast.
+
+RESIDUAL SUGAR
+In case you didn’t already know, the sugar in grapes is a blend of glucose and fructose. During the fermentation process, yeast eats these sugars to make alcohol. That being said, it’s possible to stop the fermentation before all the sugar gets consumed (through chilling or filtration).
+
+CHLORIDES
+Wine contains from 2 to 4 g L–1 of salts of mineral acids, along with some organic acids, and they may have a key role on a potential salty taste of a wine, with chlorides being a major contributor to saltiness (Walker et al., 2003; Maltman, 2013).
+
+Therefore, moderate to large concentrations of chlorides and sodium might give the wine a salty flavor which may turn way potential consumers.
+
+SULPHATES
+The main preservative used in wine is sulphur dioxide, which you’ll see on the label as ‘preservative 220’, ‘minimal sulphur dioxide added’ or ‘contains sulphites’. Sulphur dioxide is added in the winemaking process to protect the wine from oxidation and bacterial spoilage.
+
+I can tell you that the sulphur dioxide used in winemaking is less than many other products (e.g., dried fruits, some beer, meat, etc.) that we consume every day. It has been used as a preservative in wine since Roman times.
